@@ -1,3 +1,27 @@
+/* 移动设备媒体查询 */
+@media screen and (max-width: 767px) {
+  /* 在宽度小于767像素时应用以下样式 */
+  body {
+    font-size: 14px;
+  }
+
+  /* 更改侧边栏宽度和字体大小 */
+  .sidebar {
+    width: 100%;
+  }
+  .sidebar h2 {
+    font-size: 20px;
+  }
+
+  /* 改变卡片宽度和字体大小 */
+  .card {
+    width: 100%;
+  }
+  .card h3 {
+    font-size: 18px;
+  }
+}
+
 /* 通用样式 */
 * {
     box-sizing: border-box;
