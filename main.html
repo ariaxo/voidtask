@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Voidtask</title>
+	<script type="text/javascript" src="" ></script>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<!-- 主页卡片 -->
+	<div class="card win95-box" id="home">
+		<h1>Voidtask</h1>
+		<p>Welcome to my task manager!</p>
+        <img src="logos.png" width="150px" height="150px">
+        <p> My main blog is  <a href="blog.ariax,icu">Voidhead</a>. Here, I mainly organize books and movies I want to read/watch after quitting Douban, while also reminding myself of things I want to do.</p>
+        <p>日本語の勉強に熱心に取り組む</p>
+        <footer id="copyright">© 2077 by web 1.0 lover</footer>
+	</div>
+
+	<!-- 导航栏 -->
+	<div class="sidebar">
+		<button class="nav-button" id="home-nav">Homepage</button>
+		<button class="nav-button" id="calendar-nav">月カレ</button>
+		<button class="nav-button" id="movie-list-nav">Movie List</button>
+		<button class="nav-button" id="book-list-nav">Book List</button>
+		<button class="nav-button" id="misc-list-nav" data-target="#misc">Misc...</button>
+		<button class="nav-button" id="settings-nav">Settings</button>
+	</div>
+
+	<!-- 月历打卡表卡片 -->
+	<div class="card win95-box" id="calendar">
+		<h2>~Calender~</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>日</th>
+					<th>月</th>
+					<th>火</th>
+					<th>水</th>
+					<th>木</th>
+					<th>金</th>
+					<th>土</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="disabled"></td>
+					<td>1</td>
+                    <td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>8</td>
+				</tr>
+				<!-- 请根据月份和日期来生成打卡表格 -->
+			</tbody>
+		</table>
+	</div>
+
+
+    <!-- 片单页面 -->
+<div class="card" id="movies">
+  <div class="card-header">
+    <h2>片单</h2>
+    <button class="close-button">×</button>
+  </div>
+  <div class="card-body">
+    <h3>计划观看</h3>
+    <div class="movie-list">
+  <div class="movie-item">
+    <img src="https://img1.doubanio.com/view/subject/s/public/s34496227.jpg" alt="Cover">
+    <div class="movie-info">
+      <h3 class="movie-title">Title</h3>
+      <p class="movie-author">Producer</p>
+    </div>
+  </div>
+  <!-- 重复 -->
+  </div>
+</div>
+
+<div class="card-body">
+    <h3>已观看</h3>
+    <div class="movie-list">
+  <div class="movie-item">
+    <img src="https://img1.doubanio.com/view/subject/s/public/s34496227.jpg" alt="Cover">
+    <div class="movie-info">
+      <h3 class="movie-title">Title</h3>
+      <p class="movie-author">Producer</p>
+      <p class="movie-review">Review</p>
+    </div>
+  </div>
+  <!-- 重复 -->
+  </div>
+</div>
+
+</div>
+
+<!-- 书单页面 -->
+<div class="card" id="books">
+  <div class="card-header">
+    <h2>书单</h2>
+    <button class="close-button">×</button>
+  </div>
+  <div class="card-body">
+    <h3>计划阅读</h3>
+    <div class="book-list">
+  <div class="book-item">
+    <img src="https://img1.doubanio.com/view/subject/s/public/s34496227.jpg" alt="Book Cover">
+    <div class="book-info">
+      <h3 class="book-title">Book Title</h3>
+      <p class="book-author">Book Author</p>
+      <p class="book-publisher">Book Publisher</p>
+    </div>
+  </div>
+  <!-- 重复 -->
+   <div class="book-item">
+    <img src="book-cover.jpg" alt="Book Cover">
+    <div class="book-info">
+      <h3 class="book-title">Book Title</h3>
+      <p class="book-author">Book Author</p>
+      <p class="book-publisher">Book Publisher</p>
+    </div>
+  </div>
+   <div class="book-item">
+    <img src="book-cover.jpg" alt="Book Cover">
+    <div class="book-info">
+      <h3 class="book-title">Book Title</h3>
+      <p class="book-author">Book Author</p>
+      <p class="book-publisher">Book Publisher</p>
+    </div>
+  </div><!--list-->
+</div><!--body-->
+<h3>已阅读</h3>
+    <div class="book-list">
+  <div class="book-item">
+    <img src="https://img1.doubanio.com/view/subject/s/public/s34496227.jpg" alt="Book Cover">
+    <div class="book-info">
+      <h3 class="book-title">Book Title</h3>
+      <p class="book-author">Book Author</p>
+      <p class="book-publisher">Book Publisher</p>
+      <p class="book-description">!!testteaaaaaaaaaaaa换行缓缓杠hhhhhhhaaaaaa???asttestetstettsttstettsttetette</p>
+    </div>
+  </div>
+  <!-- 重复 -->
+   <div class="book-item">
+    <img src="book-cover.jpg" alt="Book Cover">
+    <div class="book-info">
+      <h3 class="book-title">Book Title</h3>
+      <p class="book-author">Book Author</p>
+      <p class="book-publisher">Book Publisher</p>
+      <p class="book-description">Book Description</p>
+    </div>
+  </div>
+   <div class="book-item">
+    <img src="book-cover.jpg" alt="Book Cover">
+    <div class="book-info">
+      <h3 class="book-title">Book Title</h3>
+      <p class="book-author">Book Author</p>
+      <p class="book-publisher">Book Publisher</p>
+      <p class="book-description">Book Description</p>
+    </div>
+  </div>
+  <div class="book-item">
+    <img src="book-cover.jpg" alt="Book Cover">
+    <div class="book-info">
+      <h3 class="book-title">Book Title</h3>
+      <p class="book-author">Book Author</p>
+      <p class="book-publisher">Book Publisher</p>
+      <p class="book-description">Book Description</p>
+    </div>
+  </div>
+  </div>
+</div> <!--card box-->
+
+<!--test-->
+<div class="card win95-box" id="misc">
+  <h1>Voidtask----test</h1>
+  <p>Welcome to my task manager!</p>
+      <img src="logos.png" width="150px" height="150px">
+      <p> My main blog is  <a href="blog.ariax,icu">Voidhead</a>. Here, I mainly organize books and movies I want to read/watch after quitting Douban, while also reminding myself of things I want to do.</p>
+      <p>日本語の勉強に熱心に取り組む</p>
+      <footer id="copyright">© 2077 by web 1.0 lover</footer>
+</div>
+
+<!--<div class="card win95-box" id="misc">
+  <div class="card-header">
+    <h2>MISC</h2>
+  </div>
+  <div class="card-body">
+    <ul>
+      <li>购买食材</li>
+      <li>约见朋友</li>
+      <li>办理银行业务</li>
+      <li>参加健身课程</li>
+      <li>完成报告撰写</li>
+    </ul>
+  </div>
+</div>
+-->
+
+<!--以下为设置页面占位-->
+<div class="card" id="settings">
+  <div class="card-header">
+  <h2>Settings</h2>
+</div>
+<div class="card-body">
+  <p>zzzz</p>
+</div>
+</div>
+
+</body>
+
+<script type="application/javascript" src="main.js"></script>
+</html>
+
