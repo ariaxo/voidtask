@@ -13,18 +13,21 @@ cards.forEach((cards) => {
   }*/
 });
 
-navButtons.forEach((button, index) => {
+navButtons.forEach((button) => {
   button.addEventListener('click', () => {
+    // 获取对应卡片的ID
+    const target = button.getAttribute('data-target');
+    
     // 隐藏所有卡片
     cards.forEach((card) => {
       card.classList.remove('active');
     });
 
     // 显示对应的卡片
-    cards[index].classList.add('active');
+    const cardToShow = document.querySelector(target);
+    cardToShow.classList.add('active');
   });
 });
-
 
 // 获取关闭按钮和对应的卡片
 const closeButtons = document.querySelectorAll('.close-button');
