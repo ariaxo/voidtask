@@ -22,12 +22,12 @@
 
 	<!-- 导航栏 -->
 	<div class="sidebar">
-		<button class="nav-button" id="home-nav">Homepage</button>
-		<button class="nav-button" id="calendar-nav">月カレ</button>
-		<button class="nav-button" id="movie-list-nav">Movie List</button>
-		<button class="nav-button" id="book-list-nav">Book List</button>
+		<button class="nav-button" id="home-nav" data-target="#home">Homepage</button>
+		<button class="nav-button" id="calendar-nav" data-target="#calendar">月カレ</button>
+		<button class="nav-button" id="movie-list-nav" data-target="#movies">Movie List</button>
+		<button class="nav-button" id="book-list-nav" data-target="#books">Book List</button>
 		<button class="nav-button" id="misc-list-nav" data-target="#misc">Misc...</button>
-		<button class="nav-button" id="settings-nav">Settings</button>
+		<button class="nav-button" id="settings-nav" data-target="#settings">Settings</button>
 	</div>
 
 	<!-- 月历打卡表卡片 -->
@@ -196,17 +196,8 @@
   </div>
 </div> <!--card box-->
 
-<!--test-->
-<div class="card win95-box" id="misc">
-  <h1>Voidtask----test</h1>
-  <p>Welcome to my task manager!</p>
-      <img src="logos.png" width="150px" height="150px">
-      <p> My main blog is  <a href="blog.ariax,icu">Voidhead</a>. Here, I mainly organize books and movies I want to read/watch after quitting Douban, while also reminding myself of things I want to do.</p>
-      <p>日本語の勉強に熱心に取り組む</p>
-      <footer id="copyright">© 2077 by web 1.0 lover</footer>
-</div>
 
-<!--<div class="card win95-box" id="misc">
+<div class="card win95-box" id="misc">
   <div class="card-header">
     <h2>MISC</h2>
   </div>
@@ -220,7 +211,6 @@
     </ul>
   </div>
 </div>
--->
 
 <!--以下为设置页面占位-->
 <div class="card" id="settings">
